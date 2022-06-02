@@ -1,1 +1,1 @@
-# Temp
+Bagfiles for this project are too large to be hosted on Git. Instead, you can find them in a public folder on [Drive](https://drive.google.com/drive/folders/1ZyXe1mB-zcip-G0ogAb--3IzuMgamQlY?usp=sharing).
