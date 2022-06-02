@@ -1,0 +1,29 @@
+seed: 0
+bag_path: "../data/manual_cpf_8.bag"
+n_clp: 40
+n_fc: 8
+n_gripper_pts: 10
+fingertip: 0.018
+max_step_size: 0.005
+arm_2: 
+  arm_id: "panda_2"
+  state_topic: "/combined_panda/panda_2_state_controller/franka_states"
+  gripper_topic: "/combined_panda/panda_2/franka_gripper/joint_states"
+  netft_topic: "/netft_data"
+  tf_topic: "/tf_static" 
+  base_id: "panda_2_link0"
+  calibration:
+    start: 0
+    stop: 400
+  object:
+    sdf_path: "../models/hex.pkl"
+    vg_path: "../models/hex_vg.pkl"
+    grad_path: "../models/hex_grad.pkl"
+    sdf_upper: 0.0
+    sdf_lower: -0.09
+contact:
+  start: 800
+  stop: 810
+QP_scaler: 10
+spread_param: -0.5
+cpf_steps: 10
