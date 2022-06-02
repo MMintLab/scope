@@ -1,0 +1,58 @@
+seed: 0
+bag_path: "../data/trial_data/trial_1.bag"
+n_clp: 20
+n_fc: 8
+n_gripper_pts: 10
+fingertip: 0.018
+max_step_size: 0.005
+contact_threshold: 50.0
+arm_1:
+  arm_id: "panda_1"
+  state_topic: "/combined_panda/panda_1_state_controller/franka_states"
+  gripper_topic: "/combined_panda/panda_1/franka_gripper/joint_states"
+  tf_topic: "/tf_static"
+  base_id: "panda_1_link0"
+  calibration:
+    start: 700
+    stop: 1300
+  object:
+    sdf_path: "../models/wrench_2.pkl"
+    vg_path: "../models/wrench_2_vg.pkl"
+    grad_path: "../models/wrench_2_grad.pkl"
+    sdf_upper: 0.11
+    sdf_lower: -0.11
+    n_opp: 10
+    max_rot_deg: 45
+    max_trans_step: 0.03
+arm_2: 
+  arm_id: "panda_2"
+  state_topic: "/combined_panda/panda_2_state_controller/franka_states"
+  netft_topic: "/netft/netft_data" 
+  tf_topic: "/tf_static" 
+  base_id: "panda_2_link0"
+  gripper_width: 0.005
+  calibration:
+    start: 400
+    stop: 1200
+  object:
+    sdf_path: "../models/poking_tool.pkl"
+    vg_path: "../models/poking_tool_vg.pkl"
+    grad_path: "../models/poking_tool_grad.pkl"
+    sdf_upper: 0.08
+    sdf_lower: -0.08
+    n_opp: 10
+    max_rot_deg: 45
+    max_trans_step: 0.01
+contact:
+  start: 1450
+  stop: 1650
+QP_scaler: 10
+contact_scaler: 20
+alignment_scaler: 1
+pen_scaler: 0.005
+pen_gt: 144
+spread_param: -0.5
+cpf_steps: 30
+oppf_steps: 20
+opp_rot_deg: 2.5
+opp_trans: 0.0025
