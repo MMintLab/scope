@@ -1,7 +1,7 @@
 # Simultaneous Contact Location and Object Pose Estimation Using Proprioceptive Tactile Feedback
-**[Project Website](https://www.mmintlab.com/research/)**
+**[Project Website](https://www.mmintlab.com/research/scope)**
 
-**[Project Video](https://www.youtube.com/channel/UCwLj6k-Yu-Q4jehcq8g6XHA)**
+**[Project Video](https://youtu.be/rAfFP-LJ7So)**
 
 Imagine that a robot picks up two objects to complete a task such as assembly or insertion. 
 It will almost always pick them up with some sort of pose uncertainty. 
